@@ -1,10 +1,10 @@
 FROM node:lts-buster
 
 RUN apt-get clean && \
-sudo mv /var/lib/apt/lists /tmp && \
-sudo mkdir -p /var/lib/apt/lists/partial && \
-sudo apt-get clean && \
-sudo apt-get update
+mv /var/lib/apt/lists /tmp && \
+mkdir -p /var/lib/apt/lists/partial && \
+apt-get clean && \
+apt-get update
 
 COPY package.json .
 
