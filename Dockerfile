@@ -1,7 +1,6 @@
 FROM node:lts-buster
 
-RUN apt-get --allow-unauthenticated update && \
-  apt-get install -y \
+RUN apt-get install -y \
   ffmpeg \
   imagemagick \
   webp && \
