@@ -1,6 +1,7 @@
 FROM node:lts-buster
 
-RUN apt-get update && \
+RUN docker image prune -f && \
+   apt-get update && \
   apt-get install -y \
   ffmpeg \
   imagemagick \
